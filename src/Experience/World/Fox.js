@@ -31,7 +31,7 @@ export default class Fox {
     this.animation.mixer = new THREE.AnimationMixer(this.model);
 
     // create actions if animations present
-    const clips = this.resource.animations || [];
+    const clips = this.resource.animations || [1];
     this.animation.actions = {};
     this.animation.actions.idle = clips[0] ? this.animation.mixer.clipAction(clips[0]) : null;
     this.animation.actions.walking = clips[1] ? this.animation.mixer.clipAction(clips[1]) : null;

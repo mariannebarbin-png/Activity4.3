@@ -67,7 +67,7 @@ gui.add(debugObject, 'envMapIntensity').min(0).max(4).step(0.001).onChange(updat
 let foxMixer = null
 
 gltfLoader.load(
-    '/models/Fox/glTF/Fox.gltf',
+    './models/Fox/glTF/Fox.gltf',
     (gltf) =>
     {
         // Model
@@ -87,13 +87,13 @@ gltfLoader.load(
 /**
  * Floor
  */
-const floorColorTexture = textureLoader.load('textures/dirt/color.jpg')
+const floorColorTexture = textureLoader.load('./textures/dirt/color.jpg')
 floorColorTexture.encoding = THREE.sRGBEncoding
 floorColorTexture.repeat.set(1.5, 1.5)
 floorColorTexture.wrapS = THREE.RepeatWrapping
 floorColorTexture.wrapT = THREE.RepeatWrapping
 
-const floorNormalTexture = textureLoader.load('textures/dirt/normal.jpg')
+const floorNormalTexture = textureLoader.load('./textures/dirt/normal.jpg')
 floorNormalTexture.repeat.set(1.5, 1.5)
 floorNormalTexture.wrapS = THREE.RepeatWrapping
 floorNormalTexture.wrapT = THREE.RepeatWrapping
