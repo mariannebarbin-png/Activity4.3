@@ -1,4 +1,4 @@
-// Add your assets paths here. Ensure public folder contains these paths (public/models/, public/textures/)
+// sources.js
 export default [
   {
     name: 'environmentMapTexture',
